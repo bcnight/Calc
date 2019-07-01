@@ -15,22 +15,24 @@ def bagi(num1, num2):
 def mod(num1, num2):
     return num1 % num2
 
+def pangkat(num1, num2):
+    return num1 ** num2
+
 
 print()
-print("++++++++++++++++++++++++++++++++++++")
 print("+++++++ K A L K U L A T O R ++++++++")
-print("++++++++++++++++++++++++++++++++++++")
-print()
-print("1. Penjumalahan ")
-print("2. Pengurangan  ")
-print("3. Perkalian    ")
-print("4. Pembagian    ")
-print("5. Modulus      ")
-print()
+print("+                                  +")
+print("+ 1. Penjumalahan                  +")
+print("+ 2. Pengurangan                   +")
+print("+ 3. Perkalian                     +")
+print("+ 4. Pembagian                     +")
+print("+ 5. Modulus                       +")
+print("+ 6. Pangkat                       +")
+print("+                                  +")
 print("++++++++++++++++++++++++++++++++++++")
 print()
 
-pilihan = str(input("Pilihan: [1/2/3/4/5] > "))
+pilihan = str(input("Pilihan: [ 1/2/3/4/5/6 ] > "))
 
 num1 = int(input("Masukkan bilangan pertama > "))
 num2 = int(input("Masukkan bilangan kedua > "))
@@ -50,6 +52,9 @@ elif pilihan is "4":
 elif pilihan is "5":
     print(num1,"%",num2,"=", mod(num1, num2))
 
+elif pilihan is "6":
+    print(num1,"^",num2,"=", pangkat(num1, num2))
+
 else:
     print("inputan salah")
 # if inputan_dari_user is '1':
@@ -64,3 +69,4 @@ else:
 # elif inputan_dari_user is '4':
 #     bagi()
 
+# di code dengan visual studio memek
